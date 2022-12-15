@@ -82,3 +82,7 @@ button:-moz-focusring,
     -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
 }
+
+em {
+    font-style: normal;
+}
