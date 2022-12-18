@@ -10,38 +10,39 @@
     <title>RadiOn</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header_content">
-                <div class="header-container">
-                    <div class="header_logo">
-                        <img
-                                src="./img/header/radion_logo.svg"
-                                alt="logo"
-                                class="header_img"/>
-                    </div>
-                    <div class="header_login">
-                        <a
-                                class="header_login-link"
-                                href="#">Войти</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
         <section class="hero">
             <div class="container">
                 <div class="hero_content">
-                    <div class="hero_title">
-                        <h1><em>Вещай</em><br />на всю страну</h1>
-                    </div>
-                    <div class="hero_description">Онлайн-сервис по запуску рекламы на всех радиостанциях страны</div>
-                    <div class="hero_registration">
-                        <div class="hero_registration-link">
+                    <header class="hero_header">
+                        <div class="hero_logo">
+                            <img
+                                    src="./img/header/radion_logo.svg"
+                                    alt="logo"
+                                    class="hero_img"/>
+                        </div>
+                        <div class="hero_login">
                             <a
-                                    class="hero_registration-link"
-                                    href="#">Выбирай радиостанцию</a>
+                                    class="hero_login-link"
+                                    href="#">Войти</a>
+                        </div>
+                    </header>
+                    <div class="hero_main">
+                        <div class="hero_main__left">
+                            <div class="hero_title">
+                                <h1><em>Вещай</em><br />на всю страну</h1>
+                            </div>
+                            <div class="hero_description">Онлайн-сервис по запуску рекламы на всех радиостанциях страны</div>
+                            <div class="hero_registration">
+                                <div class="hero_registration-link">
+                                    <a
+                                            class="hero_link"
+                                            href="#">Выбирай радиостанцию</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero_main__right">
+
                         </div>
                     </div>
                 </div>
@@ -66,12 +67,12 @@
                                 <div class="how_description">В формате MP3 длиной от 5 до 15 секунд</div>
                             </div>
                         </div>
-                        <div class="how_item">
-                            <div class="how_picture">
+                        <div class="func_item-container">
+                            <div class="func_picture">
                                 <img
-                                        src="./img/how/stations.png"
-                                        alt="what to do"
-                                        class="how_img"/>
+                                        src="./img/func/picture-3.png"
+                                        class="func-img"
+                                        alt="picture"/>
                             </div>
                             <div class="how_text">
                                 <div class="how_subtitle">Выбирай радиостанцию</div>
@@ -80,112 +81,6 @@
                         </div>
                         <div class="how_item">
                             <div class="how_picture">
-                                <img
-                                        src="./img/how/mic.png"
-                                        alt="what to do"
-                                        class="how_img"/>
-                            </div>
-                            <div class="how_text">
-                                <div class="how_subtitle">Твоя реклама в эфире</div>
-                                <div class="how_description">Модерация занимает всего __ часа</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="func">
-            <div class="container">
-                <div class="func_content">
-                    <div class="title func_title">
-                        <header class="header func_header">Удобный и полезный функционал</header>
-                    </div>
-                    <div class="func_items">
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-1.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>Бронируй рекламный эфир в режиме реального времени одновременно на нескольких радиостанциях.</p>
-                                <p>Выбирай подходящий тариф и запускай рекламу</p>
-                                <div class="func_checks">
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                src="./img/func/checked.svg"
-                                                alt="checked"
-                                                class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Быстро</div>
-                                    </div>
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                src="./img/func/checked.svg"
-                                                alt="checked"
-                                                class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Просто</div>
-                                    </div>
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Без посредников</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-2.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>После завершения рекламной кампании ты получишь</p>
-                                <div class="func_checks">
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Детальный отчет</div>
-                                    </div>
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Рекомендации по планированию следующего запуска</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-3.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>После онлайн-модерации <em>аудиоматериал сохраняется</em> в системе до повторного запуска.</p>
-                            </div>
-                        </div>
-                        <div class="func_item-container">
-                            <div class="func_picture">
                                 <img
                                         src="./img/func/picture-4.png"
                                         class="func-img"
