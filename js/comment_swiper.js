@@ -12,6 +12,7 @@ const swiper = new Swiper('.swiper', {
     // speed: 400,
     // centeredSlides: true,
     // zoom: true,
+    // autoHeight: true,
 
     // slidesOffsetBefore: 20,
     // slidesOffsetAfter: 2,
@@ -20,7 +21,6 @@ const swiper = new Swiper('.swiper', {
 
     // resizeObserver: true,
     // resistance: true,
-    // autoHeight: true,
     pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,
@@ -30,12 +30,11 @@ const swiper = new Swiper('.swiper', {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 20
+            // spaceBetween: 20
         },
         1220: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 30
         },
     },
 });
-// modules: [Navigation, Pagination],
