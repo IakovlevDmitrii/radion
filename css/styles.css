@@ -53,43 +53,6 @@ body {
     text-transform: uppercase;
     color: var(--text);
 }
-/*--------------------------- header ---------------------------*/
-.header_content {
-    position: relative;
-}
-.header-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1rem;
-}
-.header_logo {
-    height: 3rem;
-}
-.header_img {
-    width: auto;
-    height: 100%;
-}
-.header_login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--black);
-    border-radius: 3rem;
-}
-.header_login-link {
-    display: flex;
-    justify-content: center;
-    padding: 10px 1.25rem;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    color: var(--black);
-}
 /*--------------------------- hero ---------------------------*/
 .hero {
     background-color: var(--bg_primary);
@@ -104,17 +67,51 @@ body {
             50% 50%;
 }
 .hero_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 9rem 0 4rem 0;
+    padding: 0 0 3rem 0;
 }
-.hero_content > div:nth-child(2) {
-    margin: 2.5rem 0.5rem 3rem 0.5rem;
+.hero_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 1rem 0 1rem;
+}
+.hero_logo {
+    height: 3rem;
+}
+.hero_img {
+    width: auto;
+    height: 100%;
+}
+.hero_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black);
+    border-radius: 3rem;
+}
+.hero_login-link {
+    display: flex;
+    justify-content: center;
+    padding: 10px 1.25rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: var(--black);
+}
+.hero_main {
+    padding: 5rem 0 0 0;
+}
+.hero_main__right {
+    width: 50%;
+}
+.hero_main > .hero_description {
+    padding: 40px 0 50px 0;
 }
 .hero_title {
-    padding: 0 2rem 0 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero_title h1 {
     font-weight: 800;
@@ -137,12 +134,15 @@ body {
     color: var(--text);
 }
 .hero_registration {
+    margin: 0 2rem 0 2rem;
     text-align: center;
     background: var(--red);
     border-radius: 3.75rem;
 }
 .hero_registration-link {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1rem;
+}
+.hero_link {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -207,7 +207,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.25rem;
-    padding: 0 3rem 0 3rem;
+    padding: 0 2.5rem 0 2.5rem;
     text-align: center;
     color: var(--text);
 }
@@ -465,4 +465,45 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+    .hero_header {
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+        height: 7.5rem;
+        padding: 0 0 0 0;
+    }
+    .hero_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_description {
+        max-width: 24rem;
+    }
+    .hero_logo {
+        height: 4.5rem;
+    }
+    .hero_login {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+    .hero_registration {
+        margin: 0 3rem 0 3rem;
+    }
+    .hero_registration-link {
+        padding: 20px 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .hero_link {
+
+    }
+    /*--------------------------- how ---------------------------*/
+    .how_main {
+        flex-direction: row;
+    }
 }
