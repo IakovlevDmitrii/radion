@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,26 +8,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- FIXME uncomment GSAP minified version on prod -->
+     <script src="./libs/gsap/minified/gsap.min.js"></script>
+
+    <!-- FIXME comment GSAP unminified version on prod -->
+<!--    <script src="./libs/gsap/umd/gsap.js"></script>-->
+    <script src="./js/main.js"></script>
     <title>RadiOn</title>
 </head>
+
 <body>
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero_content">
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero_content">
+                <div class="hero_content__upper-layer">
                     <header class="hero_header">
                         <div class="hero_logo">
                             <a class="hero_logo-link" href="#">
-                                <img
-                                        src="./img/header/radion_logo.svg"
-                                        alt="logo"
-                                        class="hero_img"/>
+                                <img src="./img/header/radion_logo.svg" alt="logo" class="hero_img" />
                             </a>
                         </div>
                         <div class="hero_login">
-                            <a
-                                    class="hero_login-link"
-                                    href="#">Войти</a>
+                            <a class="hero_login-link" href="https://app.radion.kz/">Войти</a>
                         </div>
                     </header>
                     <div class="hero_main">
@@ -34,469 +38,501 @@
                             <div class="hero_title">
                                 <h1><em>Вещай</em><br />на всю страну</h1>
                             </div>
-                            <div class="hero_description">Онлайн-сервис по запуску рекламы на всех радиостанциях страны</div>
+                            <div class="hero_description">Онлайн-сервис по запуску рекламы на всех радиостанциях
+                                страны
+                            </div>
                             <div class="hero_registration">
                                 <div class="hero_registration-link">
-                                    <a class="hero_link" href="#">Выбирай радиостанцию</a>
+                                    <a class="hero_link" href="https://app.radion.kz/">Выбирай радиостанцию</a>
                                 </div>
                             </div>
                         </div>
                         <div class="hero_main__right">
-
+                            <div class="hero_main__radio-img-wrapper">
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="hero_content__bottom-layer">
+                    <div class="hero_content__planet hero_content__planet--purple"></div>
+                    <div class="hero_content__planet hero_content__planet--pink"></div>
+                    <div class="hero_content__planet hero_content__planet--big"></div>
+                    <div class="hero_content__ring hero_content__ring--small"></div>
+                    <div class="hero_content__ring hero_content__ring--middle"></div>
+                    <div class="hero_content__ring hero_content__ring--big"></div>
+                    <div class="hero_main__radio-img-bg"></div>
+                    <img src="./img/hero/radio.png" alt="Radio" class="hero_main__radio-img">
                 </div>
             </div>
-        </section>
-        <section class="how">
-            <div class="container">
-                <div class="how_content">
-                    <div class="title how_title">
-                        <header class="header how_header">Как это работает</header>
-                    </div>
-                    <div class="how_main">
-                        <div class="how_item">
-                            <div class="how_picture">
-                                <img
-                                    src="./img/how/sound-track.png"
-                                    alt="what to do"
-                                    class="how_img"/>
-                            </div>
-                            <div class="how_text">
-                                <div class="how_subtitle">Загружай аудиоролик</div>
-                                <div class="how_description">В формате MP3 длиной от 5 до 15 секунд</div>
-                            </div>
-                        </div>
-                        <div class="how_item">
-                            <div class="how_picture">
-                                <img
-                                        src="./img/how/stations.png"
-                                        alt="what to do"
-                                        class="how_img"/>
-                            </div>
-                            <div class="how_text">
-                                <div class="how_subtitle">Выбирай радиостанцию</div>
-                                <div class="how_description">В твоем распоряжении более __ радиостанций</div>
-                            </div>
-                        </div>
-                        <div class="how_item">
-                            <div class="how_picture">
-                                <img
-                                        src="./img/how/mic.png"
-                                        alt="what to do"
-                                        class="how_img"/>
-                            </div>
-                            <div class="how_text">
-                                <div class="how_subtitle">Твоя реклама в эфире</div>
-                                <div class="how_description">Модерация занимает всего ___ часа</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="func">
-            <div class="container">
-                <div class="func_content">
-                    <div class="title func_title">
-                        <header class="header func_header">Удобный и полезный функционал</header>
-                    </div>
-                    <div class="func_items">
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-1.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>Бронируй рекламный эфир в режиме реального времени одновременно на нескольких радиостанциях.</p>
-                                <p>Выбирай подходящий тариф и запускай рекламу</p>
-                                <div class="func_checks">
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Быстро</div>
-                                    </div>
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Просто</div>
-                                    </div>
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Без посредников</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-2.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>После завершения рекламной кампании ты получишь</p>
-                                <div class="func_checks">
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Детальный отчет</div>
-                                    </div>
-                                    <div class="func_check">
-                                        <div class="func_check-img">
-                                            <img
-                                                    src="./img/func/checked.svg"
-                                                    alt="checked"
-                                                    class="func-img" />
-                                        </div>
-                                        <div class="func_check-text">Рекомендации по планированию следующего запуска</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-3.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>После онлайн-модерации <em>аудиоматериал сохраняется</em> в системе до повторного запуска.</p>
-                            </div>
-                        </div>
-                        <div class="func_item-container">
-                            <div class="func_picture">
-                                <img
-                                        src="./img/func/picture-4.png"
-                                        class="func-img"
-                                        alt="picture"/>
-                            </div>
-                            <div class="func_item">
-                                <p>Простой и эффективный инструмент для охвата целевой аудитории. При запуске кампании через Radion <em>стоимость за охват гораздо ниже</em>, чем при запуске через подрядчика.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="business">
-            <div class="container">
-                <div class="business_content">
-                    <div class="title business_title">
-                        <header class="header d_header">Первый в Казахстане маркетплейс эфирного времени на __ радиостанциях</header>
-                    </div>
-                    <div class="business_main">
-                        <div class="business_item-container">
-                            <div class="business_item business_image">
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/1.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/2.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/3.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/4.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/5.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/6.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/7.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/8.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_1/9.png"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="business_item-container">
-                            <div class="business_item business_card">
-                                <div class="business_card-header">Бизнес</div>
-                                <div class="business_card-sub-header">Привлекай новых клиентов через рекламу на радио</div>
-                                <div class="business_link-container">
-                                    <a
-                                            href="#"
-                                            class="business_link">Разместить рекламу</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="business_item-container">
-                            <div class="business_item business_image">
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/1.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/2.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/3.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/4.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/5.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/6.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/7.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/8.png"/>
-                                </div>
-                                <div class="business_img-part">
-                                    <img
-                                            class="business-img"
-                                            alt="part of image"
-                                            src="./img/business/pic_2/9.png"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="business_item-container">
-                            <div class="business_item business_card">
-                                <div class="business_card-header">Для радиостанций</div>
-                                <div class="business_card-sub-header">Монетизируй эфир с помощью рекламных интеграций</div>
-                                <div class="business_link-container">
-                                    <a
-                                            href="#"
-                                            class="business_link">Сотрудничать</a>                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="comment">
-            <div class="comment_content">
-                <div class="title comment_title">
-                    <header class="header comment_header">Отзывы</header>
-                </div>
-                <div class="comment_main">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide-container">
-                                    <div class="slide_person">
-                                        <div class="slide_photo">
-                                            <img
-                                                src="./img/comment/person_1.png"
-                                                alt="person"
-                                                class="slide-img" />
-                                        </div>
-                                        <div class="slide_quotes">
-                                            <img
-                                                    src="./img/comment/quotes.svg"
-                                                    class="slide-img"
-                                                    alt="quotes" />
-                                        </div>
-                                    </div>
-                                    <div class="slide_text">Результат не заставил себя долго ждать, менее чем за 2 недели рекламы мы получили +1435 новых пользователей и более 1000 запросов и переходов на наш сайт.</div>
-                                    <div class="slide_contact">
-                                        <div class="slide_name">Samual Karl</div>
-                                        <div class="slide_own">CEO</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-container">
-                                    <div class="slide_person">
-                                        <div class="slide_photo">
-                                            <img
-                                                    src="./img/comment/person_1.png"
-                                                    alt="person"
-                                                    class="slide-img" />
-                                        </div>
-                                        <div class="slide_quotes">
-                                            <img
-                                                    src="./img/comment/quotes.svg"
-                                                    class="slide-img"
-                                                    alt="quotes" />
-                                        </div>
-                                    </div>
-                                    <div class="slide_text">Наша целевая аудитория-это люди за рулем, у которых всегда включено радио, поэтому мы приняли решение разместить свою рекламу именно на радио и выбрали для взаимодействия сервис Radion.</div>
-                                    <div class="slide_contact">
-                                        <div class="slide_name">Самат Аскар</div>
-                                        <div class="slide_own">компания “МируШин”</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide-container">
-                                    <div class="slide_person">
-                                        <div class="slide_photo">
-                                            <img
-                                                    src="./img/comment/person_2.png"
-                                                    alt="person"
-                                                    class="slide-img" />
-                                        </div>
-                                        <div class="slide_quotes">
-                                            <img
-                                                    src="./img/comment/quotes.svg"
-                                                    class="slide-img"
-                                                    alt="quotes" />
-                                        </div>
-                                    </div>
-                                    <div class="slide_text">Очень простой и удобный личный кабинет, где всего за 30 минут мы полностью настроили рекламную кампанию, далее прошли модерацию и включили приемники погромче, чтобы наконец-таки услышать наш бренд на ради</div>
-                                    <div class="slide_contact">
-                                        <div class="slide_name">Дами Бекболат</div>
-                                        <div class="slide_own">EventDay</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="questions">
-            <div class="container">
-                <div class="questions_content">
-                    <div class="title questions_title">
-                        <header class="header questions_header">Вопрос - ответ</header>
-                    </div>
-                    <div class="questions_main">
-                        <div class="questions_item">
-                            <div class="questions_speech questions_question">Не понимаю, как радио может быть полезно моему бизнесу, кажется, я только солью бюджет</div>
-                            <div class="questions_speech questions_answer">Включение радио в вашу рекламную кампанию - это действенный способ сделать её эффективнее. За счёт низкой стоимости, реклама на радио позволяет повысить окупаемость ваших инвестиций.</div>
-                        </div>
-                        <div class="questions_item">
-                            <div class="questions_speech questions_question">Не понимаю, как радио может быть полезно моему бизнесу, кажется, я только солью бюджет</div>
-                            <div class="questions_speech questions_answer">Включение радио в вашу рекламную кампанию - это действенный способ сделать её эффективнее. За счёт низкой стоимости, реклама на радио позволяет повысить окупаемость ваших инвестиций.</div>
-                        </div>
-                        <div class="questions_item">
-                            <div class="questions_speech questions_question">Не понимаю, как радио может быть полезно моему бизнесу, кажется, я только солью бюджет</div>
-                            <div class="questions_speech questions_answer">Включение радио в вашу рекламную кампанию - это действенный способ сделать её эффективнее. За счёт низкой стоимости, реклама на радио позволяет повысить окупаемость ваших инвестиций.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
+        </div>
+    </section>
+    <section class="how">
         <div class="container">
-            <div class="footer_content">
-                <div class="footer_item">
-                    <div class="footer_link">С чего начать</div>
-                    <div class="footer_link">Отзывы</div>
-                    <div class="footer_link">Преимущества</div>
-                    <div class="footer_link">Вопросы ответы</div>
-                    <div class="footer_link">Реклама у нас</div>
+            <div class="how_content">
+                <div class="title how_title">
+                    <header class="header how_header">Как это работает</header>
                 </div>
-                <div class="footer_item">
-                    <div class="footer_logo">
-                        <img
-                            src="./img/header/radion_logo.svg"
-                            class="footer_logo__img"
-                            alt="radion logo" />
+                <div class="how_main">
+                    <div class="how_item">
+                        <div class="how_picture">
+                            <img src="./img/how/sound-track.png" alt="what to do" class="how_img" />
+                        </div>
+                        <div class="how_text">
+                            <div class="how_subtitle">Загружай аудиоролик</div>
+                            <div class="how_description">В формате MP3 длиной от 5 до 15 секунд</div>
+                        </div>
                     </div>
-                    <div class="footer_address">г. Алматы, ул. Наурызбай батыра 23</div>
-                    <div class="footer_e-mail">pocta@pochta</div>
-                </div>
-                <div class="footer_item">
-                    <div class="footer_social-network">
-                        <a href="http://www.facebook.com">
-                            <img
-                                src="./img/footer/fb.svg"
-                                class="footer_social-network__img"
-                                alt="social networks" />
-                        </a>
+                    <div class="how_item">
+                        <div class="how_picture">
+                            <img src="./img/how/stations.png" alt="what to do" class="how_img" />
+                        </div>
+                        <div class="how_text">
+                            <div class="how_subtitle">Выбирай радиостанцию</div>
+                            <div class="how_description">В твоем распоряжении более __ радиостанций</div>
+                        </div>
                     </div>
-                    <div class="footer_social-network">
-                        <a href="https://www.instagram.com/">
-                            <img
-                                    src="./img/footer/inst.svg"
-                                    class="footer_social-network__img"
-                                    alt="social networks" />
-                        </a>
+                    <div class="how_item">
+                        <div class="how_picture">
+                            <img src="./img/how/mic.png" alt="what to do" class="how_img" />
+                        </div>
+                        <div class="how_text">
+                            <div class="how_subtitle">Твоя реклама в эфире</div>
+                            <div class="how_description">Модерация занимает всего ___ часа</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-<script src="./js/swiper-bundle.min.js"></script>
+    </section>
+    <section class="func">
+        <div class="container">
+            <div class="func_content">
+                <div class="title func_title">
+                    <header class="header func_header">Удобный и полезный функционал</header>
+                </div>
+                <div class="func_items">
+                    <div class="func_item-container">
+                        <div class="func_picture">
+                            <img src="./img/func/picture-1.png" class="func-img" alt="picture" />
+                        </div>
+                        <div class="func_item">
+                            <p>Бронируй рекламный эфир в режиме реального времени одновременно на нескольких
+                                радиостанциях.</p>
+                            <p>Выбирай подходящий тариф и запускай рекламу</p>
+                            <div class="func_checks">
+                                <div class="func_check">
+                                    <div class="func_check-img">
+                                        <img src="./img/func/checked.svg" alt="checked" class="func-img" />
+                                    </div>
+                                    <div class="func_check-text">Быстро</div>
+                                </div>
+                                <div class="func_check">
+                                    <div class="func_check-img">
+                                        <img src="./img/func/checked.svg" alt="checked" class="func-img" />
+                                    </div>
+                                    <div class="func_check-text">Просто</div>
+                                </div>
+                                <div class="func_check">
+                                    <div class="func_check-img">
+                                        <img src="./img/func/checked.svg" alt="checked" class="func-img" />
+                                    </div>
+                                    <div class="func_check-text">Без посредников</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="func_item-container">
+                        <div class="func_picture">
+                            <img src="./img/func/picture-2.png" class="func-img" alt="picture" />
+                        </div>
+                        <div class="func_item">
+                            <p>После завершения рекламной кампании ты получишь</p>
+                            <div class="func_checks">
+                                <div class="func_check">
+                                    <div class="func_check-img">
+                                        <img src="./img/func/checked.svg" alt="checked" class="func-img" />
+                                    </div>
+                                    <div class="func_check-text">Детальный отчет</div>
+                                </div>
+                                <div class="func_check">
+                                    <div class="func_check-img">
+                                        <img src="./img/func/checked.svg" alt="checked" class="func-img" />
+                                    </div>
+                                    <div class="func_check-text">Рекомендации по планированию следующего запуска
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="func_item-container">
+                        <div class="func_picture">
+                            <img src="./img/func/picture-3.png" class="func-img" alt="picture" />
+                        </div>
+                        <div class="func_item">
+                            <p>После онлайн-модерации <em>аудиоматериал сохраняется</em> в системе до повторного
+                                запуска.</p>
+                        </div>
+                    </div>
+                    <div class="func_item-container">
+                        <div class="func_picture">
+                            <img src="./img/func/picture-4.png" class="func-img" alt="picture" />
+                        </div>
+                        <div class="func_item">
+                            <p>Простой и эффективный инструмент для охвата целевой аудитории. При запуске кампании
+                                через Radion <em>стоимость за охват гораздо ниже</em>, чем при запуске через
+                                подрядчика.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="business">
+        <div class="container">
+            <div class="business_content">
+                <div class="title business_title">
+                    <header class="header d_header">Первый в Казахстане маркетплейс эфирного времени на __
+                        радиостанциях</header>
+                </div>
+                <div class="business_main">
+                    <div class="business_item-container">
+                        <div class="business_item business_image">
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/1.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/2.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/3.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/4.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/5.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/6.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/7.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/8.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_1/9.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business_item-container">
+                        <div class="business_item business_card">
+                            <div class="business_card-header">Бизнес</div>
+                            <div class="business_card-sub-header">Привлекай новых клиентов через рекламу на радио
+                            </div>
+                            <div class="business_link-container">
+                                <a href="https://app.radion.kz/" class="business_link">Разместить рекламу</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business_item-container">
+                        <div class="business_item business_image">
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/1.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/2.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/3.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/4.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/5.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/6.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/7.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/8.png" />
+                            </div>
+                            <div class="business_img-part">
+                                <img class="business-img" alt="part of image" src="./img/business/pic_2/9.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business_item-container">
+                        <div class="business_item business_card">
+                            <div class="business_card-header">Для радиостанций</div>
+                            <div class="business_card-sub-header">Монетизируй эфир с помощью рекламных интеграций
+                            </div>
+                            <div class="business_link-container">
+                                <a href="https://app.radion.kz/" class="business_link">Сотрудничать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comment">
+        <div class="comment_content">
+            <div class="title comment_title">
+                <header class="header comment_header">Отзывы</header>
+            </div>
+            <div class="comment_main">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-container">
+                                <div class="slide_person">
+                                    <div class="slide_photo">
+                                        <img src="./img/comment/person_1.png" alt="person" class="slide-img" />
+                                    </div>
+                                    <div class="slide_quotes">
+                                        <img src="./img/comment/quotes.svg" class="slide-img" alt="quotes" />
+                                    </div>
+                                </div>
+                                <div class="slide_text">Результат не заставил себя долго ждать, менее чем за 2
+                                    недели рекламы мы получили +1435 новых пользователей и более 1000 запросов и
+                                    переходов на наш сайт.</div>
+                                <div class="slide_contact">
+                                    <div class="slide_name">Samual Karl</div>
+                                    <div class="slide_own">CEO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-container">
+                                <div class="slide_person">
+                                    <div class="slide_photo">
+                                        <img src="./img/comment/person_1.png" alt="person" class="slide-img" />
+                                    </div>
+                                    <div class="slide_quotes">
+                                        <img src="./img/comment/quotes.svg" class="slide-img" alt="quotes" />
+                                    </div>
+                                </div>
+                                <div class="slide_text">Наша целевая аудитория-это люди за рулем, у которых всегда
+                                    включено радио, поэтому мы приняли решение разместить свою рекламу именно на
+                                    радио и выбрали для взаимодействия сервис Radion.</div>
+                                <div class="slide_contact">
+                                    <div class="slide_name">Самат Аскар</div>
+                                    <div class="slide_own">компания “МируШин”</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-container">
+                                <div class="slide_person">
+                                    <div class="slide_photo">
+                                        <img src="./img/comment/person_2.png" alt="person" class="slide-img" />
+                                    </div>
+                                    <div class="slide_quotes">
+                                        <img src="./img/comment/quotes.svg" class="slide-img" alt="quotes" />
+                                    </div>
+                                </div>
+                                <div class="slide_text">Очень простой и удобный личный кабинет, где всего за 30
+                                    минут мы полностью настроили рекламную кампанию, далее прошли модерацию и
+                                    включили приемники погромче, чтобы наконец-таки услышать наш бренд на ради</div>
+                                <div class="slide_contact">
+                                    <div class="slide_name">Дами Бекболат</div>
+                                    <div class="slide_own">EventDay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <div class="questions_content">
+                <div class="title questions_title">
+                    <header class="header questions_header">Вопрос - ответ</header>
+                </div>
+                <div class="questions_main">
+                    <div class="questions_item">
+                        <div class="questions_speech questions_question">Не понимаю, как радио может быть полезно
+                            моему бизнесу, кажется, я только солью бюджет</div>
+                        <div class="questions_speech questions_answer">Включение радио в вашу рекламную кампанию -
+                            это действенный способ сделать её эффективнее. За счёт низкой стоимости, реклама на
+                            радио позволяет повысить окупаемость ваших инвестиций.</div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="questions_speech questions_question">Не понимаю, как радио может быть полезно
+                            моему бизнесу, кажется, я только солью бюджет</div>
+                        <div class="questions_speech questions_answer">Включение радио в вашу рекламную кампанию -
+                            это действенный способ сделать её эффективнее. За счёт низкой стоимости, реклама на
+                            радио позволяет повысить окупаемость ваших инвестиций.</div>
+                    </div>
+                    <div class="questions_item">
+                        <div class="questions_speech questions_question">Не понимаю, как радио может быть полезно
+                            моему бизнесу, кажется, я только солью бюджет</div>
+                        <div class="questions_speech questions_answer">Включение радио в вашу рекламную кампанию -
+                            это действенный способ сделать её эффективнее. За счёт низкой стоимости, реклама на
+                            радио позволяет повысить окупаемость ваших инвестиций.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer_content">
+            <div class="footer_item footer_info">
+
+                <div class="summaryQuickLinksBTNS">
+                    <div class="summaryQuickLinksBTNSContainer">
+                        <div
+                                id="quickLinksTradeBTN"
+                                class="btnOutline">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                    <a href="#">Политика конфиденциальности</a>-->
+                <address>
+                    <a href="https://go.2gis.com/42v5ge">г. Алматы, ул. Наурызбай батыра 23</a>
+                    <a href="mailto:pochta@pochta.com">pochta@pochta</a>
+                </address>
+            </div>
+            <div class="footer_item footer_logo">
+                <a href="#">
+                    <img src="./img/header/radion_logo.svg" class="footer_logo__img" alt="radion logo" />
+                </a>
+            </div>
+            <div class="footer_item footer_social-networks">
+                <div class="footer_social-network">
+                    <a href="http://www.facebook.com">
+                        <img src="./img/footer/fb.svg" class="footer_social-network__img" alt="social networks" />
+                    </a>
+                </div>
+                <div class="footer_social-network">
+                    <a href="https://www.instagram.com/">
+                        <img src="./img/footer/inst.svg" class="footer_social-network__img" alt="social networks" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer_item footer_rights">© RadiOn 2023. Все права защищены</div>
+        </div>
+    </div>
+</footer>
+
+<div
+        class="confidentiality_modalOverlay modalOverlay"
+        id="modalOverlay1">
+    <div class="SlideModalBottomContainer">
+        <div class="SlideModalBottom">
+            <div id="modelBottomLabel">
+                <h3>Политика конфиденциальности и политика в отношении файлов Cookie</h3>
+
+                <small>Последнее обновление 28.10.2022</small>
+
+                <ul>
+                    <li>
+                        <h4 class="list-title">Введение</h4>
+                        <p>Товарищество с ограниченной ответственностью <strong>«ADV Tech»</strong> в лице <b>Генерального директора Рахметова Е.Ж.</b> действующего на основании Устава (<b>"Администратор"</b>, <b>"мы"</b>, <b>"наш"</b>) предлагает широкий спектр инструментов для повышения производительности, совместной работы и организации, доступных онлайн, в том числе через веб-сайты, включая, но не ограничиваясь, <b>https://radion.kz</b> (<b>«Веб-сайт»</b>), <b>Radion</b>, <b>мобильное приложение</b> (совместно именуемые <b>«Сервис»</b>) и предоставляемые нами услуги, а также любые другие приложения или услуги, которые мы можем предложить (совместно именуемые <b>«Услуги»</b>). Политика конфиденциальности и Политика в отношении файлов Cookie именуются далее <b>Политика</b>.</p>
+                        <p>Когда мы говорим «личные данные», мы имеем в виду информацию о вас, такую как ваше имя, адрес электронной почты, физический адрес, информация об оплате, запросы поддержки и так далее. Если вас не могут идентифицировать (например, когда личные данные были анонимны и сгруппированы), эта Политика не применяется.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">1. Какие ваши данные мы собираем и как?</h4>
+                        <p>Когда вы посещаете или используете некоторые части наших Сервисов и Веб-сайтов, мы можем попросить вас предоставить нам некоторые личные данные. Например, мы запрашиваем ваши контактные данные при регистрации, посещении Сервисов и посещении Веб-сайтов, использовании Сервисов и Веб-сайтов, оплате Услуг, для рассылки, при получении запроса на техническую поддержку, когда вы хотите связаться  с нами через форму обратной связи. Если вы не хотите предоставлять нам личные данные, вам не нужно этого делать, но это будет означать, что вы не сможете использовать наши  Сервисы и Веб-сайты.</p>
+                        <p>Большая часть информации, которую мы собираем, мы собираем непосредственно от вас. Иногда мы можем собирать личные данные о вас из других источников, таких как общедоступные материалы или доверенные третьи стороны, такие как наши партнеры по маркетингу и исследованиям. Мы используем эту информацию для дополнения уже имеющихся у вас персональных данных, чтобы лучше информировать, персонализировать и улучшать наши услуги, а также для проверки предоставленных вами персональных данных.</p>
+                        <p>Некоторая информация о вас собирается автоматически, когда вы посещаете наши Сервисы и Веб-сайты, например, ваш IP-адрес и данные браузера. Ваш IP-адрес собирается для обеспечения безопасности и для того, чтобы примерно узнать, где вы находитесь в мире, чтобы персонализировать свой опыт. Информация о вашем браузере и операционной системе хранится, чтобы помочь вам в случае возникновения проблем с использованием наших услуг. Когда вы просматриваете наши веб-сайты, мы собираем информацию, в том числе о том, какие страницы вы просматривали и по каким ссылкам переходили. Эта информация важна, поскольку она помогает нам улучшать предоставляемые вам услуги путем мониторинга производительности и того, что необходимо улучшить.</p>
+                        <p>Часть этой информации собирается с использованием файлов cookie и аналогичных технологий отслеживания, которые подробно описаны в разделе Cookie ниже.</p>
+                        <p>Тип информации, которую мы собираем, будет зависеть от вашего взаимодействия с Сервисами и Веб-сайтами. Это может включать в себя:</p>
+                        <ul>
+                            <li class="item">Контактная информация и информация для входа. Имя, должность, адрес электронной почты, физический адрес, номер телефона и аналогичные контактные данные, имя пользователя и пароли.</li>
+                            <li class="item">Платежная информация. Номер кредитной карты, банковская информация и платежный адрес.</li>
+                            <li class="item">Демографическая информация. Занятость, род занятий, регион, семейное положение. В некоторыхслучаях Сервисы и Веб-сайты могут собирать другую демографическую информацию, такую как пол, раса и возраст.</li>
+                            <li class="item">Данные об использовании и географические данные. Сервисы и Веб-сайты собирают личную информацию, связанную с использованием вами наших продуктов, услуг и веб-сайтов. Мы анализируем эти данные об использовании, чтобы мы могли улучшить наши продукты и ваш опыт работы с нами. В некоторых случаях Сервисы и Веб-сайты позволяют вам использовать инструменты администрирования, чтобы отказаться от сбора некоторых данных об использовании.</li>
+                            <li class="item">Данные об использовании могут включать информацию об операционной системе вашего компьютера или мобильного устройства, типе браузера; о типе вашего устройства; сведения о том, как вы используете наши продукты (включая запросы на родном языке); можем просматривать адрес вашего интернет-протокола (IP) и географические районы, полученные из вашего IP-адреса; данные сетевого подключения; информацию о cookie-файлах Сервисов и Веб-сайтов; информацию в файлах; метаданные; журналы с отметкой времени относительно времени доступа и продолжительности посещений; веб-сайты, которые вы посетили до посещения Сервисов и Веб-сайтов; и другие данные об использовании, относящиеся к вашей деятельности на наших Сервисах и Веб-сайтах, включая запрашиваемые вами страницы. Мы можем связать эту информацию с личной информацией, которую мы собрали о вас, и использовать ее в целях, описанных в настоящей Политике конфиденциальности, и мы можем предоставлять вам целевую маркетинговую информацию и информацию о продукте на основе ваших данных об использовании.</li>
+                            <li class="item">Данные третьих лиц. Мы можем получать вашу личную информацию от сторонних поставщиков или партнеров. Если вы подключаетесь к учетным записям Сервисов и Веб-сайтов на сторонних сайтах социальных сетей, мы можем получать информацию о ваших учетных записях в социальных сетях, например, ваше имя, имя пользователя или отображаемое имя, общедоступный профиль и адрес электронной почты. Мы можем объединять предоставленную вами информацию с автоматически собираемыми данными и с данными, полученными от третьих лиц. Некоторые третьи стороны, в том числе аналитические компании, рекламодатели и рекламные сети, могут автоматически собирать информацию о вас через наши веб-сайты, используя файлы cookie, веб-маяки и идентификаторы устройств, включая личную информацию о вашей онлайн-активности с течением времени и на разных сайтах, устройствах, онлайн-каналах и приложениях.</li>
+                            <li class="item">Изображения, видео и аудиозаписи. Фотографии, видео или аудиозаписи могут быть собраны Сервисом и Сайтами. Например, если вы посещаете Сервис и Веб-сайты, это может быть запечатлено на фотографии или видео. Если вы позвоните в службу поддержки клиентов Сервиса и Веб-сайтов, ваш звонок может быть записан. Если вы откажетесь предоставить свою личную информацию или попросите нас удалить ее, мы не сможем продолжать предоставлять или поддерживать наши продукты или услуги.</li>
+                            <li class="item">Данные о вашей компании. Название компании, сфера деятельности компании, веб-сайт компании, должность в компании, дата начала работы в компании, дата создания компании, физический адрес компании, данные о сотрудниках, экономические данные и другие показатели, которые пользователь ввёл на Сервисе и Веб-сайте.</li>
+                            <li class="item">Данные о ваших партнерах.<br />
+                                Соглашаясь с условиями данной Политики, вы подтверждаете наличие у Вас аналогичного согласия со стороны Ваших Партнеров и ограждаете нас от претензий и исков с их Стороны.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4 class="list-title">2. Для чего мы используем ваши личные данные?</h4>
+                        <p>Ваши личные данные используются исключительно для улучшения вашего опыта использования Сервиса и Веб-сайтов, а также в качестве средства для предоставления нам следующего:</p>
+                        <p>
+                            Материалов поддержки, запрашиваемой вами информации или данные, основанные на использовании вами приложения, чтобы помочь вам получить
+                            Чтобы держать вас в курсе любых обновлений, уведомлений или всего, что имеет отношение киспользованию вами Сервиса и Сайтов;
+                            Запрашивать у вас обратную связь или принимать участие в любом проводимом нами исследовании, которое вы сможете игнорировать или отказаться от участия;
+                            Чтобы помочь вам с любой необходимой вам поддержкой через любой из наших каналов связи;
+                            Чтобы помочь нам обнаружить и предотвратить любую мошенническую или злонамеренную деятельность, а также убедиться, что все используют наши веб-сайты и услуги справедливо и в соответствии с договором оферты.
+                            Мы можем использовать личные данные, которые мы собираем о вас и других пользователях наших Веб-сайтов и Сервисов (независимо от того, получены ли они напрямую или от третьих лиц), для создания анонимных и сгруппированных аналитических материалов и отчетов, которыми мы можем поделиться публично.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">3. Как мы передаем и храним ваши данные?</h4>
+                        <p>У нас есть юридические обязательства по сбору любой личной информации, которую вы предоставляете нам. Мы будем надежно хранить вашу личную информацию и будем хранить ее до тех пор, пока вы пользуетесь запрошенной вами услугой.</p>
+                        <p>Все ваши личные данные хранятся на защищенных серверах PS Cloud и защищены методами маскирования и шифрования данных. Мы не передаем ваши персональные данные третьим сторонним поставщикам или любым другим приложениям или услугам.</p>
+                        <p>Мы будем передавать ваши персональные данные только регулирующим органам, правоохранительным органам, государственным органам, судам или другим третьим лицам, если мы считаем необходимым соблюдать применимые законы или нормативные акты или осуществлять, устанавливать или защищать наши законные права. Там, где это возможно и уместно, мы будем уведомлять вас об этом типе раскрытия.</p>
+                        <p>Сервис и Веб-сайты могут предоставлять информацию сторонним поставщикам услуг или поставщикам, с которыми мы заключили договор на предоставление услуг от нашего имени. Эти сторонние поставщики услуг или поставщики могут использовать информацию, которую мы им предоставляем, только в соответствии с инструкциями настоящей Политики конфиденциальности и использования файлов cookie.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">4. Как долго мы храним ваши личные данные?</h4>
+                        <p>Время, в течение которого мы храним ваши персональные данные, зависит от того, какие это данные и есть ли необходимость их постоянного хранения (например, чтобы предоставить вам запрошенную вами услугу или соблюдать требования законодательства).</p>
+                        <p>Обычно ваши личные данные хранятся до тех пор, пока владелец компании не удалит сотрудника или пока владелец учетной записи не удалит его. Для бесплатных аккаунтов мы имеем право удалить вашу информацию, если она не использовалась в течение 4 месяцев.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">5. Ваши права</h4>
+                        <p>По вопросам отмены подписки на рассылку и другим вопросам, связанным с работой Сервиса и Веб-сайтов, а также с другими вопросами, предложениями, вы можете обращаться по электронной почте support@radion.kz.</p>
+                        <p>Вы также имеете право знать, какие персональные данные о вас мы храним, а также проверять их правильность и актуальность. Вы можете запросить копию ваших личных данных или попросить нас ограничить обработку ваших личных данных или удалить их.</p>
+                        <p>Если вы недовольны тем, как мы обрабатываем ваши личные данные, сообщите нам об этом, отправив электронное письмо по адресу support@radion.kz. Мы рассмотрим вашу жалобу и свяжемся с вами в разумные сроки. Вы также можете подать жалобу в местный орган защиты данных. Они смогут посоветовать вам, как подать жалобу.</p>
+                        <p>Если Вы не согласны с условиями Политики, то Вы должны немедленно прекратить любое использование Сайта.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">6. Что такое cookie и как мы их используем?</h4>
+                        <p>Файлы cookie - это небольшие текстовые файлы, которые веб-сайты сохраняют на вашем компьютере. Файлы cookie, используемые Сервисом и Веб-сайтами, не содержат никакой вашей личной информации, и мы не можем использовать их, чтобы выяснить, кто вы. Файл cookie часто содержит случайно сгенерированный номер, который хранится на вашем устройстве. Многие cookie автоматически удаляются после того, как вы закончите пользоваться Сервисом и Сайтами.</p>
+                        <p>Когда вы заходите на наш сайт, ваш компьютер автоматически получает файл cookie. Файлы cookie - это устройства, которые идентифицируют ваш компьютер на нашем сервере и персонализируют сайт для вашего будущего использования. Файлы cookie регистрируют только те области нашего сайта, которые посещал компьютер. Файл cookie не предоставляет нам никакой личной информации. Поэтому, если вы не предоставили нам какую-либо личную информацию, вы все равно можете просматривать наш сайт анонимно. Если вы не хотите куки, вы можете настроить свой браузер, чтобы запретить его. Файл cookie необходим для входа в Сервис и на Веб-сайты, а также для нашего безопасного хранения вашего логина для вашего сеанса.</p>
+                        Улучшение опыта пользователей
+                        <p>Сервис и веб-сайты работают над тем, чтобы его пользователи имели наилучшие возможности. Это означает, что пользователю не нужно повторять некоторые действия без необходимости. Например, если вы увеличиваете размер текста, когда находитесь на Сервисе и Веб-сайтах, может быть установлен файл cookie, который запоминает предпочитаемый вами размер текста, чтобы при переходе на другую страницу сайта вам не приходилось менять ваши настройки снова.</p>
+                        Измерение эффективности сайтов
+                        <p>Мы также можем установить cookie на компьютер пользователя, чтобы отслеживать количество посетителей. Никакая личная информация, такая как ваше имя или адрес, не собирается в рамках этого процесса.</p>
+                        <p>
+                            Поддержка обмена информацией между пользователями через социальные сети.
+                            Обмен является ключевой частью того, как люди получают и используют информацию. Социальные сети являются популярным способом сделать это, чтобы люди могли делиться информацией о Сервисе и Веб-сайтах таким образом. Владельцы этих социальных сетей могут размещать файлы cookie на устройствах пользователей, и использование этих файлов cookie часто объясняется в их собственной политике использования файлов cookie. Администратор не контролирует политику использования файлов cookie этих компаний.
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">7. Google Analytics</h4>
+                        <p>Служба и веб-сайты используют Google Analytics, службу веб-аналитики, разработанную компанией Google, Inc. («Google»). Программное обеспечение Google Analytics использует файлы cookie для анализа поведения пользователей. Все данные (т. е. Ваша деятельность в Службе и на веб-сайтах) собираются с помощью файлов cookie и хранятся на серверах Google в США.</p>
+                        <p>Google, в свою очередь, использует эти данные для оценки поведения пользователей в целом, для составления отчетов для руководителей сайтов, а также для предоставления данных службам, связанным с активностью веб-сайта и использованием Интернета. Google может передавать различные данные третьим лицам, если это требуется по закону или если третьи лица обрабатывают информацию от имени Google.</p>
+                        <p>Google никоим образом не будет связывать ваш IP-адрес с любыми другими данными, хранящимися в Google. Если вы не хотите предоставлять Google данные для просмотра, вы можете заблокировать использование файлов cookie через настройки браузера. Дополнительная информация об отказе от аналитики Google: https://www.google.com/intl/en/policies/privacy/, и http://www.google.com/analytics/terms/us.html.</p>
+                        <p>Google Analytics объясняется по следующей ссылке https://www.google.com/analytics/.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">8. Что такое IP-адрес?</h4>
+                        <p>Если вы подключены к Интернету, у вас будет IP-адрес. Адрес будет автоматически собран и зарегистрирован как часть подключения вашего компьютера к нашему веб-серверу и может использоваться для определения общего количества посещений каждой части сайта. Он такжеиспользуется для определения приблизительного местоположения страны и помогает в выявлении потенциальной вредоносной активности.</p>
+                    </li>
+                    <li>
+                        <h4 class="list-title">9. Кто мы и как с нами связаться?</h4>
+                        <p>Когда мы ссылаемся на «мы», это относится к Администратору и веб-сайту https://radion.kz/, Radion.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="./js/comment_swiper.js"></script>
+<script src="./js/questions_animation.js"></script>
+<script src="./js/confidentiality_animation.js"></script>
 </body>
+
 </html>
