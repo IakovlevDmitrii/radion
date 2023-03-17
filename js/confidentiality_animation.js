@@ -1,59 +1,62 @@
-const overlay = document.querySelector('.confidentiality_modalOverlay');
-const slide = document.querySelector('.SlideModalBottom');
+document.addEventListener('DOMContentLoaded', ()=>{
 
-TweenLite.set(slide, { autoAlpha: 0, y: 50 });
-TweenLite.set(overlay, { autoAlpha: 0 });
+    const overlay = document.querySelector('.confidentiality_modalOverlay');
+    const slide = document.querySelector('.SlideModalBottom');
 
-var quickLinksTradeBTN = document.getElementById("quickLinksTradeBTN");
+    TweenLite.set(slide, { autoAlpha: 0, y: 50 });
+    TweenLite.set(overlay, { autoAlpha: 0 });
 
-quickLinksTradeBTN.onclick = function() {
+    var quickLinksTradeBTN = document.getElementById("quickLinksTradeBTN");
 
-    var rect = this.getBoundingClientRect();
-    TweenMax.set(overlay, {
-        x: rect.left,
-        y: rect.top,
-        height: rect.height,
-        width: rect.width
-    });
+    quickLinksTradeBTN.onclick = function() {
 
-    var tl = new TimelineMax();
+        var rect = this.getBoundingClientRect();
+        TweenMax.set(overlay, {
+            x: rect.left,
+            y: rect.top,
+            height: rect.height,
+            width: rect.width
+        });
 
-    tl.to(overlay, 0.3, {
-        height: window.innerHeight,
-        width: window.innerWidth,
-        x: 0,
-        y: 0,
-        autoAlpha: 1
-    });
+        var tl = new TimelineMax();
 
-    tl.to(slide, 0.5, {
-        autoAlpha: 1,
-        y: 0,
-        ease: Power1.easeInOut
-    });
+        tl.to(overlay, 0.3, {
+            height: window.innerHeight,
+            width: window.innerWidth,
+            x: 0,
+            y: 0,
+            autoAlpha: 1
+        });
 
-    SlideModalBottomToggle = true;
-
-    var modelBottomLabel = document.getElementById("modelBottomLabel");
-    modelBottomLabel.visibility = "visible";
-
-};
-
-modalOverlay1.onclick = function() {
-    if (SlideModalBottomToggle === true) {
-
-        TweenLite.to(slide, 0.4, {
-            autoAlpha: 0,
-            y: 50,
+        tl.to(slide, 0.5, {
+            autoAlpha: 1,
+            y: 0,
             ease: Power1.easeInOut
         });
 
-        TweenLite.to(overlay, 0.5, {
-            autoAlpha: 0,
-            ease: Power1.easeInOut
-        });
+        SlideModalBottomToggle = true;
 
-        slideModalBottom = false;
-    } else {
-    }
-};
+        var modelBottomLabel = document.getElementById("modelBottomLabel");
+        modelBottomLabel.visibility = "visible";
+
+    };
+
+    modalOverlay1.onclick = function() {
+        if (SlideModalBottomToggle === true) {
+
+            TweenLite.to(slide, 0.4, {
+                autoAlpha: 0,
+                y: 50,
+                ease: Power1.easeInOut
+            });
+
+            TweenLite.to(overlay, 0.5, {
+                autoAlpha: 0,
+                ease: Power1.easeInOut
+            });
+
+            slideModalBottom = false;
+        } else {
+        }
+    };
+})
